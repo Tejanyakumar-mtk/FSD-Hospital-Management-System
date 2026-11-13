@@ -123,3 +123,9 @@ The database consists of **12 normalized relational tables** in Oracle:
 - **SMS / WhatsApp Gateway:** Automated appointment reminders and SMS verification for password recovery.
 - **Laboratory Information System (LIS):** Direct upload of diagnostic radiology images (DICOM) and pathology reports.
 - **Inpatient & ICU Bed Tracker:** Real-time bed occupancy and ward admission workflows.
+  ---
+
+## Contributors
+
+- Contributed to project development and documentation.
+- GitHub: @avinashsai09
