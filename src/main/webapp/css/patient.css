@@ -1,0 +1,144 @@
+/* ============================================================================
+   Hospital Management System (HMS) - Patient Portal CSS
+   ============================================================================ */
+
+/* Booking Stepper */
+.booking-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.step-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.step-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    background-color: var(--bg-subtle);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin: 0 auto 8px auto;
+    border: 2px solid var(--border-color);
+    font-size: 14px;
+}
+
+.step-item.active .step-circle {
+    background-color: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+}
+
+.step-item.completed .step-circle {
+    background-color: var(--success);
+    color: #ffffff;
+    border-color: var(--success);
+}
+
+.step-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.step-item.active .step-label {
+    color: var(--primary);
+}
+
+/* Time Slot Selection Grid */
+.slot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.slot-btn {
+    padding: 10px 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.slot-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+.slot-btn.selected {
+    background-color: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+}
+
+.slot-btn:disabled {
+    background-color: var(--bg-subtle);
+    color: var(--text-muted);
+    cursor: not-allowed;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Doctor Select Cards in Booking */
+.doctor-select-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.doctor-select-card:hover {
+    border-color: var(--primary);
+    background-color: #fafcff;
+}
+
+.doctor-select-card.selected {
+    border-color: var(--primary);
+    background-color: var(--primary-light);
+    box-shadow: 0 0 0 2px var(--primary);
+}
+
+/* Booking Summary Card */
+.booking-summary-box {
+    background: #f8fafc;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-color);
+    font-size: 14px;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--secondary);
+    padding-top: 14px;
+}

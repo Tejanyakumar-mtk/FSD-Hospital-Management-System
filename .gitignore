@@ -1,0 +1,25 @@
+
+# Environment and secret files
+.env
+.env.*
+!.env.example
+*.properties
+secrets/
+
+# Eclipse files
+.metadata/
+.settings/
+
+# Java build files
+bin/
+build/
+target/
+
+# Tomcat generated files
+work/
+temp/
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db

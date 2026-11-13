@@ -1,0 +1,49 @@
+/* ============================================================================
+   Hospital Management System (HMS) - Print Stylesheet
+   ============================================================================ */
+
+@media print {
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 12pt;
+    }
+
+    .navbar, .sidebar, .btn, .no-print, .table-toolbar, footer {
+        display: none !important;
+    }
+
+    .main-content, .container, .app-layout {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .card {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .invoice-container {
+        width: 100% !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .table th, .table td {
+        border-color: #000000 !important;
+        color: #000000 !important;
+    }
+
+    .badge {
+        border: 1px solid #000000 !important;
+        color: #000000 !important;
+        background: transparent !important;
+    }
+
+    @page {
+        margin: 1.5cm;
+    }
+}
