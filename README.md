@@ -129,3 +129,8 @@ The database consists of **12 normalized relational tables** in Oracle:
 
 - Contributed to project development and documentation.
 - GitHub: @avinashsai09
+
+- ## Project Documentation
+
+This section provides additional information
+about the Hospital Management System.
